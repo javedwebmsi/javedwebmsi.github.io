@@ -39,11 +39,6 @@
         .what-i-do-info-art {
           padding: 25px;
           img {
-            @media (max-width: 768px) {
-              max-width: 100%;
-              width: 100%;
-              height: auto;
-            }
             max-width: 430px;
             height: 280px;
           }
@@ -147,5 +142,23 @@
 .dark-mode {
   .info-cards-title {
     color: #40a9ff !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .whatido {
+    .latest-work {
+      .what-i-do {
+        .what-i-do-info {
+          .what-i-do-info-art {
+            img {
+              max-width: 100%;
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
   }
 }
